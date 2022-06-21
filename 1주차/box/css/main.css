@@ -1,0 +1,5 @@
+@import url("./box.css");  /* 직렬 방식 */
+
+div {
+  font-size: 100px;
+}
