@@ -1,0 +1,17 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+.box::before {
+  content: "<!--";
+}
+
+.box::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+}

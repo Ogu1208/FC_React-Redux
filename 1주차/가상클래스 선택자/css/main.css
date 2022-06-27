@@ -1,0 +1,54 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+
+/* .box:hover {
+  width: 300px;
+  background-color: royalblue;
+} */
+
+/* .box:active {
+  width: 300px;
+  background-color: rgb(147, 164, 214);
+} */
+
+/* Focus */
+.box:focus {
+  width: 300px;
+  background-color: rgb(147, 164, 214);
+}
+
+
+input {
+
+}
+
+input:focus {
+  background-color: rgb(244, 225, 188);
+}
+
+/* First Child */
+/* .fruits span:first-child {
+  color: red;
+} */
+
+/* Nth-child */
+/* .fruits *:nth-child(-n+3) {
+  color: red;
+}  */
+
+/* 부정 선택자 NOT */
+.fruits *:not(span) {
+  color: red;
+}
+
+.box::before {
+  content: "앞!";
+}
+
+.box::after {
+  content: "뒤!";
+}
