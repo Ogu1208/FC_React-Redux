@@ -1,0 +1,12 @@
+/* [disabled] {
+  color: red;
+} */
+
+[type="password"] {
+  background-color:bisque;
+  color: red;
+}
+
+[data-fruit-name] {
+  color: blue;
+}
