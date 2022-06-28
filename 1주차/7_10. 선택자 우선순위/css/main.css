@@ -1,0 +1,19 @@
+/* div { color: red !important; }  important : 무한대!! - 999999점 */
+#color_yellow { color: yellow; }   /* id 선택자 - 100점 */
+.color_green { color: green; }  /* class 선택자 - 10점 */
+div { color: blue; }   /* 태그 선택자 - 1점 */
+* { color: darkblue; }  /* 전체 선택자 - 0점 */
+body { color: violet; }  /* 상속 - X */
+
+
+div {
+  font-size: 70px;
+}
+
+div.hello {
+  color: green;
+}
+
+.hello {
+  color: red;
+}
