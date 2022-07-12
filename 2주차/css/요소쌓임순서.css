@@ -20,5 +20,7 @@
   left: 50px;
 }
 .container .item:nth-child(3) {
-  
+  position: fixed;
+  z-index: 2;
+/*   포지션이 없는 상태이기 때문에 요소쌓임의 첫번째 조건에 부합되지 않는다. */
 }
