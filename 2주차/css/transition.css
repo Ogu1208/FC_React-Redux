@@ -1,0 +1,13 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 
+  /*  시간 2개를 나란히 쓰면 지속시간과 대기시간을 의미한다. */
+    width 1s .5s,
+    background-color 2s;
+}
+div:active {
+  width: 300px;
+  background-color: royalblue;
+}
