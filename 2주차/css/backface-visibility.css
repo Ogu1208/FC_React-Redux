@@ -14,7 +14,7 @@ body {
   font-size: 60px;
   display: flex;
   justify-content: center;
-  aligh-items: center;
+  align-items: center;
   transform: rotateY(180deg);
   backface-visibility: hidden;
   
