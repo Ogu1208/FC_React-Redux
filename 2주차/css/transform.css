@@ -1,0 +1,15 @@
+body {
+  padding: 100px;
+}
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+.container .item{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transform: perspective(200px) rotateX(45deg) translateX(100px);
+}
+/* 원근 거리는 원래 있었던 곳에서 바라보는 구조가 된다. */
