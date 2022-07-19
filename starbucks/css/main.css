@@ -9,6 +9,9 @@ body {
 img {
   display: block;
 }
+a {
+  text-decoration: none;  /* 밑줄 없애기 */
+}
 
 
 /* HEADER */
@@ -31,4 +34,50 @@ header .logo {
   bottom: 0;
   left: 0;
   margin: auto;
+  display: none;
+}
+
+header .sub-menu {
+
+}
+header .sub-menu ul.menu {   /* 띄어쓰기는 후손 선택자 */
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+header .sub-menu ul.menu li {
+  position: relative;
+}
+header .sub-menu ul.menu li::before {   /* ::는 가상요소 선택자, before는 인라인 */
+  content:"";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;   /* absolute, fixed는 block요소로 자동으로 바뀜 */
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;   /* 첫번째 구분선을 안보이게 함 */
+}
+header .sub-menu ul.menu li a {
+  /* background-color: red; */
+  font-size: 12px;
+  padding: 11px 16px;   /* 클릭할 수 있는 영역을 넓힘 */
+  display: block;   /* a태그는 inline요소라 padding, margin등을 설정할 수 X */
+  color: #656565;
+
+}
+header .sub-menu ul.menu li a:hover {
+  color: #000;
+}
+header .sub-menu .search {
+
+}
+header .sub-menu .search input {
+  
+}
+header .sub-menu .search .material-icons {
+
 }
