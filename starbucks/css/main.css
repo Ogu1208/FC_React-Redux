@@ -12,7 +12,11 @@ img {
 a {
   text-decoration: none;  /* 밑줄 없애기 */
 }
-
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
 
 /* HEADER */
 header {
@@ -20,13 +24,9 @@ header {
   border-bottom: 1px solid #c8c8c8;
 
 }
-header .inner {
-  width: 1100px;
+header > .inner {  /* >는 자식선택자 */
   height: 120px;
-  margin: 0 auto;
   /* background-color: orange; */
-  position: relative;
-
 }
 header .logo {
   height: 75px;
@@ -108,4 +108,42 @@ header .sub-menu .search .material-icons {
 }
 header .sub-menu .search.focused .material-icons {   /* .search.focused 붙여써야 일치선택자 */
   opacity: 0;
+}
+
+header .main-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;   /* 요소의 쌓임 순서 */
+  display: flex;
+}
+header .main-menu .item {
+  
+}
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+header .main-menu .item:hover .item__name {
+  background-color: #2c2a29;
+  color: #669900;
+  border-radius: 6px 6px 0 0;
+}
+header .main-menu .item .item__contents {
+  width: 100%;
+  position: fixed;  /* 뷰포트 기준 */
+  left: 0;
+  display: none;
+}
+header .main-menu .item:hover .item__contents { 
+  display: block;   /* item에 마우스를 올리면 contents가 출력됨 */
+}
+header .main-menu .item .item__contents .contents__menu {
+  background-color: red;
+  height: 200px;
+}
+header .main-menu .item .item__contents .contents__texture {
+  background-color: orange;
+  height: 100px;
 }
